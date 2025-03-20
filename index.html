@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/src/js/header.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,
+              wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <title>Dito Drave Express</title>
+</head>
+
+<body>
+    <!----navbar--->
+    <nav class="sticky bg-white dark:bg-gray-900 w-full top-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./src/image/logo/logo002.png" class="block dark:hidden w-32 h-auto" alt="logo002">
+                <img src="./src/image/logo/DITO.DRIVE_EXPREE_branco.png" class="hidden dark:block w-32 h-auto"
+                    alt="logo002">
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-1 rtl:space-x-reverse">
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></i>Cadastrar</button>
+                <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"> 
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 
+          rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 
+          md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded-sm 
+              md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 
+              md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 
+              dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#Services"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 
+              md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 
+              dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 
+              md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 
+              dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----home--->
+    <section id="home" class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"><i class="fa-solid fa-motorcycle"></i> Está com pressa?, correndo contra o tempo.</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Mas, e se eu te dissesse que aqui, exatamente neste lugar, todos chegam na hora certa.</p>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center dark:text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Dito Drive Express
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                  Chamar agora!
+                </a> 
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex ">
+                <img src="./src/image/logo/logo002.png" class="block dark:hidden  h-auto" alt="logo002">
+                <img src="./src/image/logo/DITO.DRIVE_EXPREE_branco.png" class="hidden dark:block h-auto"
+                    alt="logo002">
+            </div>                
+        </div>
+    </section>
+
+    <!---sobre-nos-->
+    <section id="about" class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
+            <div class="grid grid-cols-2 gap-4 mt-6">
+                <img class="w-full rounded-lg" src="./src/image/about/entrega01.jpg" alt="entrega">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="./src/image/about/carro.jpg" alt="moto-taxi">
+            </div>
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <span class="text-blue-700 dark:text-blue-500">
+                    <i class="fa-regular fa-circle-right"></i> Sobre Nós
+                </span>
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nosso Historia
+                </h2>
+                <p class="mb-4"> Desde 2011, a <span class="text-blue-700 dark:text-blue-500">
+                        Dito Drive Express tem sido referência em eficiência, segurança e confiabilidade no setor de
+                        transportes e logística. </span>Com mais de uma década de experiência, construímos uma história
+                    marcada
+                    pelo compromisso com nossos clientes e pela busca constante por inovação.
+
+                    Nosso objetivo é oferecer soluções logísticas ágeis e personalizadas, garantindo a entrega de
+                    mercadorias com rapidez e segurança. Contamos com uma equipe altamente capacitada e uma frota
+                    moderna, preparada para atender às mais diversas necessidades do mercado.
+
+                    Ao longo dos anos, conquistamos a confiança de nossos clientes através de um serviço
+                    diferenciado, pautado pela transparência, compromisso e excelência no atendimento. Nosso
+                    crescimento é fruto do trabalho árduo, da dedicação e da paixão por oferecer o melhor em
+                    transporte e logística.
+
+                    Na Dito Drive Express, cada entrega representa mais do que um simples transporte: é a
+                    concretização da nossa missão de conectar pessoas e negócios com eficiência e responsabilidade.
+
+                    Dito Drive Express - Transportando com confiança desde 2011.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!---serviços--->
+    <section id="Services" class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <span class="text-blue-700 dark:text-blue-500">
+                    <i class="fa-regular fa-circle-right"></i> Serviços
+                </span>
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Prestamos um
+                    serviço de qualidade.</h2>
+                <p class="mb-4"> Oferece serviços de moto e transporte por carro, garantindo
+                    deslocamento rápido e seguro.
+                    Também realizamos coleta e entrega de mercadorias diversas com agilidade, eficiência e compromisso.
+                    Seja para transporte pessoal ou logística, conte com um serviço confiável, prático e acessível para
+                    suas necessidades diárias</p>
+                <p>Oferecemos transporte ágil e seguro por moto e carro. Realizamos coleta e entrega com eficiência.
+                    Um serviço confiável, prático e acessível para suas necessidades diárias..</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+                    alt="office content 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+                    alt="office content 2">
+            </div>
+        </div>
+    </section>
+
+
+    <!---Refletir--->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+
+
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <img class="w-full rounded-lg " src="./src/image/logo/moto_carro01.png" alt="office content 1">
+                    <img class="mt-4 w-full lg:mt-10 rounded-lg" src="./src/image/logo/atendente002.png"
+                        alt="office content 2">
+                </div>
+            </div>
+
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <span class="text-blue-700 dark:text-blue-500">
+                    <i class="fa-regular fa-circle-right"></i> Refletir
+                </span>
+                <h1
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    Aqui todos vocês chegam na hora certa.</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    No ritmo acelerado da vida, estamos sempre correndo contra o tempo, tentando alcançar objetivos,
+                    cumprir prazos e encontrar o momento certo para cada passo. Mas, e se eu te dissesse que aqui,
+                    exatamente neste lugar, todos chegam na hora certa?
+
+                    Cada encontro, cada desafio e cada conquista acontecem no momento exato em que devem acontecer. Não
+                    há atrasos, não há adiantamentos – apenas o tempo perfeito para cada pessoa, cada história e cada
+                    jornada.
+
+                    Se você chegou agora, é porque este é o seu momento. Aproveite, aprenda, evolua. Porque aqui, todos
+                    vocês chegam na hora certa.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!---formulario--->
+    <section id="contact" class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                Contate-nos</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Tem um problema
+                ou reclamações? Quer enviar feedback sobre o serviço? Precisa de detalhes sobre nossos Serviços? Nos
+                avise</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Seu
+                        e-mail</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="name@gmail.com" required>
+                </div>
+                <div>
+                    <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Assunto</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Deixe-nos saber como podemos ajudá-lo" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Sua
+                        mensagem</label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Deixe um comentário..."></textarea>
+                </div>
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:blue-700">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!---footer--->
+    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+        <div class="mx-auto max-w-screen-xl">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+
+                    <a href="#" class="flex items-center "><i class="fa-solid fa-hand-holding"></i>
+                        <img src="./src/image/logo/logo002.png" class="block dark:hidden w-32 h-auto" alt="logo002">
+                        <img src="./src/image/logo/DITO.DRIVE_EXPREE_branco.png" class="hidden dark:block w-32 h-auto"
+                            alt="logo002">
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Recursos</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">CEOs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Reclamações</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Siga-nos</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline ">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Jurídico</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Política de Privacidade</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Termos &amp;Condições</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+
+                <br>
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#home"
+                        class="hover:underline">Dito Drive Express™</a>.
+                    Todos os direitos reservados.
+                    CNPJ:000.000/0001-00
+                </span>
+
+
+                <div class="text-1xl font-bold flex mt-4 space-x-8 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                        Whatsapp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>
